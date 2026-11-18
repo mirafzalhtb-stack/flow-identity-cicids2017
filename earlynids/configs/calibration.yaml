@@ -1,0 +1,6 @@
+# PLANNED (Phase 3). Not consumed by any v4 code.
+# Parameters will be fixed in docs/experiment_protocol.md BEFORE test-set evaluation.
+status: planned
+methods: [none, temperature, temperature_per_prefix]
+metrics: [ece_15bins, brier, nll]
+fit_partition: calib

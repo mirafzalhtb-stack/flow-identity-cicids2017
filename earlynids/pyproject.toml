@@ -1,0 +1,10 @@
+[project]
+name = "earlynids"
+version = "0.4.0"
+description = "EarlyNIDS research framework: data foundation (v4)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

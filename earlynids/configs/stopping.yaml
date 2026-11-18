@@ -1,0 +1,7 @@
+# PLANNED (Phase 4). Not consumed by any v4 code.
+# Parameters will be fixed in docs/experiment_protocol.md BEFORE test-set evaluation.
+status: planned
+policies: [fixed_prefix, fixed_confidence, calibrated_confidence, cost_threshold, continuation_value]
+cost_grid: {c_fp: [1.0], c_fn: [1, 5, 10, 50], c_wait_per_packet: [0.0, 0.001, 0.01, 0.05]}
+max_horizon: 20
+tuning_partition: val

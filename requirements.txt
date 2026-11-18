@@ -1,0 +1,6 @@
+pandas>=2.1
+pyarrow>=14
+numpy>=1.26
+matplotlib>=3.8
+scapy>=2.5        # only for audit/a05_pcap_audit.py
+huggingface_hub>=0.23   # only for downloading the label files

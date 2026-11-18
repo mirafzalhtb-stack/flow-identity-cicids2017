@@ -1,0 +1,4 @@
+definition,flows,cand_0,cand_1,cand_2,cand_>=3,two_cand_fin,two_cand_rst,two_cand_fin_rst,two_cand_fin_rst_tcp_valid
+n_strict == 0,60508,1010,20284,22753,16461,20028,2709,22737,22282
+match_reason == no_candidate_meets_strict_identity,37669,0,0,21412,16257,19115,2296,21411,21332
+match_status != unique,50840,1010,11137,22337,16356,19125,3105,22230,21714

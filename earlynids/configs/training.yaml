@@ -1,0 +1,7 @@
+# PLANNED (Phase 2). Not consumed by any v4 code.
+# Parameters will be fixed in docs/experiment_protocol.md BEFORE test-set evaluation.
+status: planned
+model: {type: gru, hidden: 64, layers: 1, dropout: 0.1}
+features: [log_ip_len, log_iat, direction, tcp_flags_bits]
+horizons: [3, 5, 10, 20]
+seeds: [1, 2, 3, 4, 5]

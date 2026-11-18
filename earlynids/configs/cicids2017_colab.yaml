@@ -1,0 +1,73 @@
+# EarlyNIDS v4.3 example configuration for CIC-IDS2017 Parquet labels in Google Colab.
+# Copy this file to your run directory on Drive, then set labeling.utc_offset_hours ONLY after
+# reviewing offset_evidence.json (scripts.time_offset_diagnostics) and the dataset documentation.
+# Monday is expected to contain only BENIGN traffic; gate it with require_both_classes=false only for a
+# per-day diagnostic review, never for the training dataset.
+# VERIFY = placeholder to be confirmed on the real CIC-IDS2017 files (scripts.inspect_label_csv,
+# scripts.time_offset_diagnostics) before any labelled experiment.
+# PROVISIONAL = engineering threshold, not derived from data; review after the first real audit.
+flows:
+  max_packets: 20
+  idle_timeout: 120.0        # VERIFY against the CICFlowMeter settings of the label CSV version
+  active_timeout: null
+  max_active: 200000
+  post_close_grace: 5.0
+  closed_memory: 400000
+  forward_jump_warn_s: 3600.0  # diagnostic counter only
+  window_s: 120.0            # v4.3 reporting window (no segmentation change): last packet time + fwd/bwd counts
+                             # within [start, start+window_s]; lets the matcher test a fixed-duration flow cut
+
+labeling:
+  utc_offset_hours: null     # REQUIRED. No default.
+  timestamp_formats:         # VERIFY
+    - "%d/%m/%Y %H:%M:%S"
+    - "%d/%m/%Y %H:%M"
+    - "%d/%m/%Y %I:%M:%S %p"
+    - "%d/%m/%Y %I:%M %p"
+  ambiguous_12h: false       # VERIFY
+  duration_unit: "us"        # VERIFY
+  start_tolerance_s: 1.0     # PROVISIONAL, added to timestamp resolution (1 s or 60 s)
+  duration_abs_tolerance_s: 1.0   # PROVISIONAL
+  duration_rel_tolerance: 0.10    # PROVISIONAL
+  check_duration: true
+  csv_active_timeout_s: null # VERIFY: set if the CSV tool splits long flows at a fixed duration
+  collapse_exact_duplicate_rows: false
+  benign_labels: ["BENIGN"]
+  encoding: "latin-1"
+  timestamp_epoch_unit: null # set only if label timestamps are epoch numbers (UTC assumed)
+  optional_columns: {flow_id: "flow id", fwd_packets: "total fwd packets", bwd_packets: "total backward packets"}
+  chunksize: 100000
+  match_chunk_size: 100000
+  # v4.3 identity evidence. legacy_v41 reproduces v4.1/v4.2 results exactly (for reproducibility).
+  matching_mode: evidence_v43
+  strict_duration_abs_s: 0.001   # PROVISIONAL
+  strict_duration_rel: 0.01      # PROVISIONAL
+  identity_margin: 2.0           # PROVISIONAL: runner-up must miss the strict tolerance by >= 2x
+  packet_check: report           # off | report | require
+  packet_tolerance: 0            # PROVISIONAL; only used with packet_check: require
+  eof_censoring: true            # end-of-capture flows: duration is a lower bound
+
+quality_gate:                # all PROVISIONAL engineering thresholds
+  min_match_rate: 0.90
+  max_unmatched_rate: 0.10
+  max_conflict_rate: 0.01
+  max_ambiguous_rate: 0.05
+  max_time_inconsistent_rate: 0.05
+  max_invalid_csv_rate: 0.01
+  min_trusted_per_class: 100
+  require_both_classes: true
+  min_trusted_coverage: 0.0  # report-only by default
+  validated_thresholds: null # e.g. {max_conflict_rate: "docs/dataset_quality_gate.md#review-2026-12"}; others stay PROVISIONAL
+
+splits:
+  strategy: chronological    # capture | chronological | initiator | host_components | hybrid
+  fractions: {train: 0.6, val: 0.1, calib: 0.1, test: 0.2}
+  embargo_s: 60.0
+  capture_assignment: null   # strategy capture, e.g. {monday: train, tuesday: train, wednesday: val}
+  hybrid_plan: null          # strategy hybrid, e.g.
+  #  {monday: train, tuesday: train, wednesday: train,
+  #   thursday: [{until_fraction: 0.5, partition: val}, {until_fraction: 0.75, partition: calib}, {partition: test}],
+  #   friday: test}
+  exclude_hosts: []          # strategy host_components: shared infrastructure, reported in the manifest
+  max_component_fraction: 0.5
+  seed: 42

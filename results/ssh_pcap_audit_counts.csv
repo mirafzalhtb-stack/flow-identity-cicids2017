@@ -1,0 +1,16 @@
+flow_uid,src_port,observed_packets,selection_reason,attacker_port,pcap_packets,pcap_minus_earlynids
+tuesday_ssh_1719_1731-000000027,47242,55,alternative_2_plus_54,47242,56,1
+tuesday_ssh_1719_1731-000000033,47246,57,alternative_2_plus_56,47246,58,1
+tuesday_ssh_1719_1731-000000035,47248,56,alternative_2_plus_55,47248,57,1
+tuesday_ssh_1719_1731-000000042,47252,54,dominant_2_plus_53,47252,55,1
+tuesday_ssh_1719_1731-000000062,47256,54,dominant_2_plus_53,47256,55,1
+tuesday_ssh_1719_1731-000000058,47254,54,dominant_2_plus_53,47254,55,1
+tuesday_ssh_1719_1731-000000114,47258,51,alternative_2_plus_50,47258,52,1
+tuesday_ssh_1719_1731-000000153,47260,54,dominant_2_plus_53,47260,55,1
+tuesday_ssh_1719_1731-000000291,47262,54,dominant_2_plus_53,47262,55,1
+tuesday_ssh_1719_1731-000000885,47350,53,alternative_2_plus_52,47350,54,1
+tuesday_ssh_1719_1731-000004712,47798,52,alternative_2_plus_51,47798,53,1
+tuesday_ssh_1719_1731-000006435,48004,56,label_conflict,48004,57,1
+tuesday_ssh_1719_1731-000009278,48234,56,label_conflict,48234,57,1
+tuesday_ssh_1719_1731-000010284,48328,6,rst_case,48328,8,2
+tuesday_ssh_1719_1731-000010300,48340,56,label_conflict,48340,57,1
