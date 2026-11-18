@@ -80,6 +80,8 @@ All scripts take `--labels data/traffic_labels --runs <runs> --out results`.
 | `a03_tuesday_smoke_multiplicity.py` | Sec. 4.2, Fig. 2(b) | candidate coverage and multiplicity by end reason |
 | `a04_attack_windows.py` | Sec. 4.3, Table 3 | FTP 287 and SSH 461 two-candidate flows; label policies |
 | `a05_pcap_audit.py` | Sec. 3.4, 4.1, 4.3 | packet-level checks of the flows in `audit/inputs/` |
+| `a06_random_sample.py` | Sec. 3.4, 4.1 | whole-day context; random sample of 150 pairs (seed 2027) and a tcpdump filter |
+| `a07_random_pcap_audit.py` | Sec. 4.1 | FIN boundary within 1 ms in 149/150; ΔP ≤ post-close packets in 150/150 |
 | `make_figures.py` | Fig. 2 | `fig_monday_dp.pdf`, `fig_tuesday_multiplicity.pdf` |
 
 ```bash
@@ -90,6 +92,10 @@ python audit/a04_attack_windows.py            --labels data/traffic_labels --run
 python audit/a05_pcap_audit.py --sample audit/inputs/monday_audit_sample20.csv --print-bpf   # then tcpdump
 python audit/a05_pcap_audit.py --sample audit/inputs/monday_audit_sample20.csv \
     --pcap monday_sample.pcap --labels data/traffic_labels --day monday --margin 0.001
+# random audit (seed 2027, fixed before the audit)
+python audit/a06_random_sample.py --labels data/traffic_labels --runs <runs> --out results
+tcpdump -r Monday-WorkingHours.pcap -F results/random_audit_sample150.bpf -w monday_sample150.pcap
+python audit/a07_random_pcap_audit.py --labels data/traffic_labels --pcap monday_sample150.pcap --out results
 python audit/make_figures.py --results results --out figures
 ```
 
@@ -103,7 +109,7 @@ python audit/make_figures.py --results results --out figures
 * **Row ids.** `candidate_row_ids` in EarlyNIDS outputs are 0-based row positions in the day's label table.
 * In the Tuesday smoke run, the minute rule alone leaves 83 flows without a candidate; with
   `--previous-minute`, 5 of them find a record in the preceding minute (78 left).
-* The audit samples in `audit/inputs/` were chosen by hand. They are not random samples.
+* The audit samples in `audit/inputs/` were chosen by hand. The random sample of `a06` (seed 2027) checks that their results generalise.
 * The results describe how flows are cut and matched. They do not show whether the original labels
   are correct, and no detection model is trained.
 

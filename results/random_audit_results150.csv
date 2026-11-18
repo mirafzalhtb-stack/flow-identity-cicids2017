@@ -1,0 +1,151 @@
+flow_uid,group,end_reason,dp,observed,pcap_inside,csv_total,grace_pkts,late_pkts,h1_fin_error_ms,h2_csv_eq_observed_plus_grace,h2b_csv_eq_observed_plus_grace_late,has_fwd_fin,n_rst,first_rst_dir,after_rst_pkts,after_rst_flags,grace_flags
+monday-000325855,B_fin_random,fin,1.0,49,49,50,1,0,0.0,True,True,True,0,,0,,>A
+monday-000009071,B_fin_random,fin,1.0,25,25,26,1,0,0.0,True,True,True,0,,0,,>A
+monday-000123511,B_fin_random,fin,2.0,26,26,28,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000199969,B_fin_random,fin,1.0,9,9,10,1,0,0.0,True,True,True,0,,0,,>A
+monday-000152651,B_fin_random,fin,2.0,16,16,18,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000192494,B_fin_random,fin,2.0,16,16,18,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000195757,B_fin_random,fin,1.0,9,9,10,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000196447,B_fin_random,fin,1.0,18,18,19,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000164677,B_fin_random,fin,0.0,12,12,12,1,0,-0.0,False,False,True,0,,0,,>A
+monday-000131885,B_fin_random,fin,1.0,9,9,10,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000240615,B_fin_random,fin,0.0,19,19,19,1,0,159.317,False,False,True,0,,0,,<A
+monday-000327574,B_fin_random,fin,2.0,19,19,21,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000132440,B_fin_random,fin,1.0,9,9,10,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000234551,B_fin_random,fin,1.0,18,18,19,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000142019,B_fin_random,fin,2.0,122,122,124,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000132750,B_fin_random,fin,2.0,26,26,28,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000056417,B_fin_random,fin,1.0,13,13,14,1,0,0.0,True,True,True,0,,0,,>A
+monday-000204603,B_fin_random,fin,1.0,9,9,10,1,0,0.0,True,True,True,0,,0,,>A
+monday-000189198,B_fin_random,fin,2.0,18,18,20,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000128052,B_fin_random,fin,2.0,18,18,20,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000326693,B_fin_random,fin,1.0,27,27,28,1,0,0.0,True,True,True,0,,0,,>A
+monday-000197978,B_fin_random,fin,2.0,16,16,18,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000021874,B_fin_random,fin,1.0,13,13,14,1,0,0.0,True,True,True,0,,0,,>A
+monday-000138200,B_fin_random,fin,1.0,14,14,15,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000125188,B_fin_random,fin,1.0,19,19,20,1,0,0.0,True,True,True,0,,0,,>A
+monday-000105348,B_fin_random,fin,1.0,28,28,29,1,0,0.0,True,True,True,0,,0,,>A
+monday-000102966,B_fin_random,fin,2.0,26,26,28,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000135746,B_fin_random,fin,0.0,18,18,18,1,0,0.0,False,False,True,1,fwd,0,,>RA
+monday-000199986,B_fin_random,fin,1.0,9,9,10,1,0,0.0,True,True,True,0,,0,,>A
+monday-000200582,B_fin_random,fin,2.0,18,18,20,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000338188,B_fin_random,fin,2.0,21,21,23,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000097610,B_fin_random,fin,2.0,22,22,24,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000193648,B_fin_random,fin,2.0,26,26,28,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000168337,B_fin_random,fin,1.0,9,9,10,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000092351,B_fin_random,fin,2.0,18,18,20,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000200885,B_fin_random,fin,2.0,22,22,24,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000103154,B_fin_random,fin,1.0,9,9,10,1,0,0.0,True,True,True,0,,0,,>A
+monday-000333548,B_fin_random,fin,1.0,11,11,12,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000169878,B_fin_random,fin,2.0,16,16,18,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000285335,B_fin_random,fin,0.0,14,14,14,1,0,-0.0,False,False,True,0,,0,,>A
+monday-000105509,B_fin_random,fin,1.0,12,12,13,1,0,0.0,True,True,True,0,,0,,>A
+monday-000326542,B_fin_random,fin,2.0,16,16,18,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000127598,B_fin_random,fin,1.0,11,11,12,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000342872,B_fin_random,fin,1.0,9,9,10,1,0,0.0,True,True,True,0,,0,,>A
+monday-000174839,B_fin_random,fin,1.0,53,53,54,1,0,0.0,True,True,True,0,,0,,>A
+monday-000143678,B_fin_random,fin,2.0,59,59,61,3,0,-0.0,False,False,True,0,,0,,<A >FA >A
+monday-000102710,B_fin_random,fin,2.0,26,26,28,3,0,0.0,False,False,True,0,,0,,<A >FA >A
+monday-000186222,B_fin_random,fin,2.0,20,21,22,2,0,-0.0,True,True,True,0,,0,,>FA >A
+monday-000342681,B_fin_random,fin,0.0,23,23,23,1,0,-0.0,False,False,True,0,,0,,>A
+monday-000133151,B_fin_random,fin,1.0,20,20,21,1,0,-0.0,True,True,True,0,,0,,>A
+monday-000184342,B_rst_random_within2,rst,1.0,21,21,22,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000162514,B_rst_random_within2,rst,1.0,20,20,21,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000353036,B_rst_random_within2,rst,0.0,2668,2668,2668,0,0,0.0,True,True,True,1,bwd,0,,
+monday-000254250,B_rst_random_within2,rst,1.0,22,22,23,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000169125,B_rst_random_within2,rst,1.0,17,17,18,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000124982,B_rst_random_within2,rst,1.0,21,21,22,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000165849,B_rst_random_within2,rst,1.0,22,22,23,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000202033,B_rst_random_within2,rst,1.0,18,18,19,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000194310,B_rst_random_within2,rst,2.0,15,15,17,2,0,0.0,True,True,True,1,fwd,2,<A <FA,<A <FA
+monday-000143326,B_rst_random_within2,rst,2.0,17,17,19,2,0,0.0,True,True,True,1,fwd,2,<A <FA,<A <FA
+monday-000168984,B_rst_random_within2,rst,1.0,21,21,22,2,0,-0.0,False,False,True,1,fwd,2,<FA <A,<FA <A
+monday-000261674,B_rst_random_within2,rst,2.0,15,15,17,2,0,0.0,True,True,True,1,fwd,2,<A <FA,<A <FA
+monday-000149577,B_rst_random_within2,rst,1.0,17,17,18,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000181443,B_rst_random_within2,rst,1.0,17,17,18,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000344914,B_rst_random_within2,rst,1.0,19,19,20,1,0,-0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000195613,B_rst_random_within2,rst,1.0,20,20,21,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000202394,B_rst_random_within2,rst,2.0,29,29,31,2,0,-0.0,True,True,True,2,fwd,2,>R <FA,>R <FA
+monday-000107856,B_rst_random_within2,rst,1.0,22,22,23,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000067656,B_rst_random_within2,rst,2.0,18,18,20,3,0,-0.0,False,False,True,1,fwd,3,<A <FA <A,<A <FA <A
+monday-000133961,B_rst_random_within2,rst,1.0,16,16,17,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000163492,B_rst_random_within2,rst,2.0,16,16,18,3,0,0.0,False,False,True,3,fwd,3,>R <FA >R,>R <FA >R
+monday-000186149,B_rst_random_within2,rst,1.0,17,17,18,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000002436,B_rst_random_within2,rst,1.0,21,21,22,1,0,-0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000292906,B_rst_random_within2,rst,1.0,18,18,19,1,0,-0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000027769,B_rst_random_within2,rst,1.0,22,22,23,2,0,-0.0,False,False,True,1,fwd,2,<FA <A,<FA <A
+monday-000266621,B_rst_random_within2,rst,1.0,35,35,36,2,0,-0.0,False,False,True,1,fwd,2,<FA <A,<FA <A
+monday-000255107,B_rst_random_within2,rst,1.0,19,19,20,1,0,-0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000157625,B_rst_random_within2,rst,1.0,17,17,18,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000259577,B_rst_random_within2,rst,1.0,20,20,21,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000179506,B_rst_random_within2,rst,1.0,4,4,5,1,0,-0.0,True,True,True,2,bwd,1,>R,>R
+monday-000212510,B_rst_random_within2,rst,1.0,21,21,22,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000029275,B_rst_random_within2,rst,1.0,8,8,9,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000233885,B_rst_random_within2,rst,1.0,21,21,22,1,0,-0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000128909,B_rst_random_within2,rst,1.0,10,10,11,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000058357,B_rst_random_within2,rst,1.0,16,16,17,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000003117,B_rst_random_within2,rst,1.0,22,22,23,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000123919,B_rst_random_within2,rst,1.0,19,19,20,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000125386,B_rst_random_within2,rst,1.0,17,17,18,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000238815,B_rst_random_within2,rst,1.0,20,20,21,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000331301,B_rst_random_within2,rst,1.0,14,14,15,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000295176,B_rst_random_within2,rst,1.0,18,18,19,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000097522,B_rst_random_within2,rst,1.0,17,17,18,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000283461,B_rst_random_within2,rst,1.0,63,63,64,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000164034,B_rst_random_within2,rst,1.0,19,19,20,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000295574,B_rst_random_within2,rst,1.0,24,24,25,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000187576,B_rst_random_within2,rst,1.0,21,21,22,2,0,-0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000027081,B_rst_random_within2,rst,1.0,20,20,21,1,0,0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000290429,B_rst_random_within2,rst,1.0,16,16,17,1,0,-0.0,True,True,True,1,fwd,1,<FA,<FA
+monday-000157318,B_rst_random_within2,rst,1.0,17,17,18,2,0,0.0,False,False,True,2,fwd,2,<FA >R,<FA >R
+monday-000251141,B_rst_random_within2,rst,2.0,17,17,19,2,0,-0.0,True,True,True,1,fwd,2,<A <FA,<A <FA
+monday-000032924,C_rst_tail,rst,3.0,17,17,20,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000238649,C_rst_tail,rst,3.0,17,17,20,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000342301,C_rst_tail,rst,5.0,8,8,13,5,0,0.0,True,True,True,3,fwd,5,<A >R >R <A <FA,<A >R >R <A <FA
+monday-000237198,C_rst_tail,rst,21.0,31,31,52,21,0,-0.0,True,True,True,1,fwd,21,<A <A <A <A <A <A,<A <A <A <A <A <A
+monday-000206887,C_rst_tail,rst,3.0,17,17,20,3,0,-0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000138573,C_rst_tail,rst,3.0,10,10,13,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000127202,C_rst_tail,rst,3.0,14,14,17,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000133969,C_rst_tail,rst,5.0,15,15,20,5,0,0.0,True,True,True,1,fwd,5,<A <A <A <A <FA,<A <A <A <A <FA
+monday-000099309,C_rst_tail,rst,8.0,16,16,24,9,0,-0.0,False,False,True,6,fwd,9,>R <A <A >R >R <A,>R <A <A >R >R <A
+monday-000294622,C_rst_tail,rst,4.0,19,19,23,5,0,-0.0,False,False,True,4,fwd,5,>R <A >R <FA >R,>R <A >R <FA >R
+monday-000349670,C_rst_tail,rst,5.0,8,8,13,5,0,-0.0,True,True,True,3,fwd,5,<A >R >R <A <FA,<A >R >R <A <FA
+monday-000037570,C_rst_tail,rst,7.0,16,16,23,8,0,-0.0,False,False,True,5,fwd,8,<A >R >R <A <A >R,<A >R >R <A <A >R
+monday-000327004,C_rst_tail,rst,4.0,8,8,12,5,0,0.0,False,False,True,3,fwd,5,<A <A >R <FA >R,<A <A >R <FA >R
+monday-000161534,C_rst_tail,rst,7.0,18,18,25,8,0,0.0,False,False,True,6,fwd,8,>R >R <A <A >R >R,>R >R <A <A >R >R
+monday-000321930,C_rst_tail,rst,4.0,17,17,21,4,0,-0.0,True,True,True,1,fwd,4,<A <A <A <FA,<A <A <A <FA
+monday-000330270,C_rst_tail,rst,3.0,8,8,11,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000283503,C_rst_tail,rst,5.0,15,15,20,5,0,0.0,True,True,True,1,fwd,5,<A <A <A <A <FA,<A <A <A <A <FA
+monday-000286426,C_rst_tail,rst,4.0,19,19,23,5,0,0.0,False,False,True,5,fwd,5,>R >R >R <FA >R,>R >R >R <FA >R
+monday-000322172,C_rst_tail,rst,4.0,16,16,20,4,0,-0.0,True,True,True,1,fwd,4,<A <A <A <FA,<A <A <A <FA
+monday-000297049,C_rst_tail,rst,4.0,8,8,12,5,0,0.0,False,False,True,3,fwd,5,<A >R <A <FA >R,<A >R <A <FA >R
+monday-000234489,C_rst_tail,rst,4.0,16,16,20,4,0,0.0,True,True,True,3,fwd,4,<A >R <A >R,<A >R <A >R
+monday-000129291,C_rst_tail,rst,3.0,15,15,18,3,0,-0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000241664,C_rst_tail,rst,7.0,18,18,25,8,0,-0.0,False,False,True,6,fwd,8,>R >R <A <A >R >R,>R >R <A <A >R >R
+monday-000022645,C_rst_tail,rst,5.0,15,15,20,5,0,-0.0,True,True,True,1,fwd,5,<A <A <A <A <FA,<A <A <A <A <FA
+monday-000310930,C_rst_tail,rst,5.0,15,15,20,5,0,-0.0,True,True,True,1,fwd,5,<A <A <A <A <FA,<A <A <A <A <FA
+monday-000130316,C_rst_tail,rst,3.0,16,16,19,3,0,-0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000122123,C_rst_tail,rst,4.0,16,16,20,4,0,0.0,True,True,True,1,fwd,4,<A <A <A <FA,<A <A <A <FA
+monday-000334402,C_rst_tail,rst,4.0,16,16,20,5,0,-0.0,False,False,True,1,fwd,5,<A <A <A <FA <A,<A <A <A <FA <A
+monday-000033345,C_rst_tail,rst,3.0,17,17,20,4,0,-0.0,False,False,True,1,fwd,4,<A <A <FA <A,<A <A <FA <A
+monday-000337645,C_rst_tail,rst,5.0,15,15,20,6,0,-0.0,False,False,True,1,fwd,6,<A <A <A <A <FA <A,<A <A <A <A <FA <A
+monday-000279229,C_rst_tail,rst,3.0,15,15,18,3,0,-0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000266632,C_rst_tail,rst,4.0,15,15,19,5,0,-0.0,False,False,True,1,fwd,5,<A <A <A <FA <A,<A <A <A <FA <A
+monday-000351749,C_rst_tail,rst,3.0,17,17,20,3,0,-0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000350844,C_rst_tail,rst,5.0,8,8,13,6,0,0.0,False,False,True,4,fwd,6,>R <A >R <A <FA >R,>R <A >R <A <FA >R
+monday-000214577,C_rst_tail,rst,5.0,8,8,13,5,0,0.0,True,True,True,3,fwd,5,<A >R <A >R <FA,<A >R <A >R <FA
+monday-000300525,C_rst_tail,rst,3.0,19,19,22,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000130359,C_rst_tail,rst,5.0,16,16,21,5,0,0.0,True,True,True,1,fwd,5,<A <A <A <A <FA,<A <A <A <A <FA
+monday-000346429,C_rst_tail,rst,3.0,20,20,23,3,0,-0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000292482,C_rst_tail,rst,3.0,8,8,11,4,0,0.0,False,False,True,3,fwd,4,<A >R <FA >R,<A >R <FA >R
+monday-000045171,C_rst_tail,rst,4.0,8,8,12,5,0,0.0,False,False,True,3,fwd,5,<A >R <A <FA >R,<A >R <A <FA >R
+monday-000006748,C_rst_tail,rst,3.0,13,13,16,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000341025,C_rst_tail,rst,4.0,17,17,21,4,0,0.0,True,True,True,1,fwd,4,<A <A <A <FA,<A <A <A <FA
+monday-000098809,C_rst_tail,rst,8.0,16,16,24,8,0,0.0,True,True,True,1,fwd,8,<A <A <A <A <A <A,<A <A <A <A <A <A
+monday-000315322,C_rst_tail,rst,7.0,18,18,25,8,0,0.0,False,False,True,6,fwd,8,>R >R <A <A >R >R,>R >R <A <A >R >R
+monday-000266631,C_rst_tail,rst,4.0,17,17,21,5,0,0.0,False,False,True,1,fwd,5,<A <A <A <FA <A,<A <A <A <FA <A
+monday-000081000,C_rst_tail,rst,3.0,10,10,13,3,0,0.0,True,True,True,1,fwd,3,<A <FA <A,<A <FA <A
+monday-000261807,C_rst_tail,rst,12.0,14,14,26,12,0,-0.0,True,True,True,1,fwd,12,<A <A <A <A <A <A,<A <A <A <A <A <A
+monday-000167274,C_rst_tail,rst,6.0,8,8,14,7,0,-0.0,False,False,True,4,fwd,7,<A >R <A <A >R <FA,<A >R <A <A >R <FA
+monday-000200969,C_rst_tail,rst,3.0,17,17,20,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
+monday-000109532,C_rst_tail,rst,3.0,17,17,20,3,0,0.0,True,True,True,1,fwd,3,<A <A <FA,<A <A <FA
